@@ -23,7 +23,7 @@
     width: 100%;
     text-align: center;
     font-size: 330%;
-    padding-top: 30px;
+    padding-top: 2vh;
     font-family: 'Niconne', cursive;
 }
 
@@ -36,8 +36,9 @@
     position: absolute;
     width: 70%;
     height:80%;
-    top: 120px;
-    left: 230px;
+    top: 15vh;
+    left: 15vw;
+    /* right: 15vw; */
     background-color: white;
     border-radius: 30px;
     padding: 50px;
@@ -45,25 +46,26 @@
 
 .data{
     color: #7b113a;
-    font-size: 220%;
+    /* font-size: 220%; */
+    font-size: 2.4vw;
     text-align: center;
 }
 .doctor{
-    margin-top: 40px;
+    margin-top: 8vh;
 }
 
 .docname{
     text-align: center;
     color: #7b113a;
-    font-size: 200%;
+    font-size: 3vh;
     font-weight: 700;
 }
 
 .docimage{
     /* background-color: yellow; */
-    height: 250px;
+    height: 38vh;
     background-image: url(./img/docfin.PNG);
-    width: 380px;
+    width: 45vh;
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: contain;
@@ -72,11 +74,10 @@
 
 .btn{
     background-color: #7b113a;
-    width: 300px;
-    height: 50px;
-    margin: 0 auto;
+    width: 40vh;
+    height: 8vh;
+    margin: 2.5vh auto;
     display: flex;
-    margin-top: 10px;
 }
 
 
@@ -84,13 +85,30 @@ a{
     font-size: 150%;
     color: white;
     text-decoration: none;
-    margin-left: 65px;
-    margin-top: 7px;   
+    margin: 1vh auto;
 }
 
 iframe{
     height: 100%;
     width: 90%;
     margin-left: 50px;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        padding: 7vw;
+    }
+    .data{
+        font-size: 6vw;
+    }
+    .doctor{
+        margin-top: 5vh;
+    }
+    .docimage{
+        width: 60vw;
+    }
+    .btn{
+        width: 50vw;
+    }
 }
 
