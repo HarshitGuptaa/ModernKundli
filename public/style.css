@@ -146,6 +146,14 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 1vh;
+    display: flex;
+}
+
+.conc a{
+    color: #9b2b71;
+    margin: 0;
+    font-size: 1rem;
+    margin-left: 5px;
 }
 
 .in2{
@@ -196,7 +204,7 @@ iframe{
         padding-top: 2.5vh;
     }
     .heading{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .head-data{
 
@@ -205,13 +213,13 @@ iframe{
         /* width: 12vw;
         height: 5.5vh;
          */
-        width: 45px;
-        height: 40px;
+        width: 40px;
+        height: 35px;
          /* margin-left: 1.5vw;
         margin-right: 1.5vw; */
         margin-left: 5px;
         margin-right: 5px;
-        margin-top: 1vh;
+        margin-top: 0.3vh;
     }
     .in2{
         font-size:  5vw;
