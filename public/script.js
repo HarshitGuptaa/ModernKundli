@@ -1,27 +1,52 @@
-// const axios = require("axios");
+// let countEle = document.querySelector(".count");
+let places = document.querySelectorAll(".digit");
 
-// let nextBtn =  document.querySelector("a");
-// let input = document.querySelector("input");
-// // let db = require("./info")
+const database = firebase.database();
+// let root = database.ref("counter-dc1a2-default-rtdb").child("/counter");
+let root = database.ref("counter");
 
-// console.log(db);
+let count;
 
-// nextBtn.addEventListener("click",function(){
+root.on('value', (snapshot) => {
+    console.log(snapshot.val());
+    count = snapshot.val().num;
+    putVal(count);
+    // countEle.innerText =  JSON.stringify(count)  ;
+});
+
+setInterval(function(){
+    count++;
+    root.update({
+        num:count
+    })    
     
-//     console.log(db);
-//     db.name = input.value;
-//     nextQues(db);
+    putVal(count);
 
-// });
+    // countEle.innerText = JSON.stringify(count)  ;
+}, 1000 *60*5 );
+
+// database.ref("/counter").set({
+//     num:103
+// })
 
 
-// function nextQues(db){
-//     let url = window.location.href;
-//     url =  url.split("/");
-//     url = url[3];
-//     console.log(url);
-//     axios.get("./Q2.html",db);
-// }
+// digit show on front page
+function putVal(number){
+    let arr = [0,0,0,0,0];
+    let idx = 4;
+    while(number>0 && idx>=0){
+        arr[idx] = Math.floor(number%10);
+        number/=10;
+        idx--; 
+    }
+    console.log(arr);
+    
+    
+    for(let i=0;i<5;i++){
+        places[i].innerHTML = arr[i];
+    }
+}
+
 
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document

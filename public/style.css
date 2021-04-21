@@ -101,9 +101,9 @@
 
 .docimage{
     /* background-color: yellow; */
-    height: 38vh;
+    height: 16vh;
     background-image: url(./img/doc.PNG);
-    width: 45vh;
+    width: 13vh;
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: contain;
@@ -111,13 +111,33 @@
     margin-top: 1vh;
 }
 
+.num-box{
+    display: flex;
+    justify-content: center;
+}
+.digit{
+    /* border: 1px solid black; */
+width: 40px;
+height: 40px;
+background:#fde9f5;
+color: #9b2b71;
+margin: 0 3px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.5rem;
+}
+.useless{
+    text-align: center;
+    margin-top: 1vh;
+}
 .btn{
     background-color: #9b2b71;
     width: 40vh;
     height: 7vh;
-    margin: 0 auto;
+    margin: 4vh auto;
     display: flex;
-    margin-top: -3vh;
+    /* margin-top: -3vh; */
     border-radius: 5px;
     
 }

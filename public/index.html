@@ -26,20 +26,52 @@
                 <div class="docname">DOCTOR X</div>
                 <div class="docimage"></div>
             </div>
+            <div class="num-box">
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+            </div>
+            <div class="useless">People have already taken the quiz</div>
             <div class="btn">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2jiGDJUGzZSIK7lBhDsbp357M-rE3eWx26z3RogshApI-iA/viewform?usp=sf_link"> Take the Quiz </a>
             </div>
             <div class="icons">
-                <div class="icon"><img src="./img/whatsapp.PNG" alt=""></div>
-                <div class="icon"><img src="./img/twitter.PNG" alt=""></div>
-                <div class="icon"><img src="./img/fb.PNG" alt="" srcset=""></div>
-                <div class="icon"><img src="./img/insta.PNG" alt="" srcset=""></div>
-                <div class="icon"><img src="./img/linkedin.PNG" alt=""></div>
+                <div class="icon"> <a href=""> <img src="./img/whatsapp.PNG"  alt=""> </a> </div>
+                <div class="icon"><a href="https://twitter.com/weds_in"><img src="./img/twitter.PNG" alt=""></a></div>
+                <div class="icon"><a href="https://www.facebook.com/datetowed"> <img src="./img/fb.PNG"  alt="" srcset=""></a></div>
+                <div class="icon"><a href="https://www.instagram.com/weds_in/"> <img src="./img/insta.PNG" alt="" srcset=""></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/company/wedsin/"> <img src="./img/linkedin.PNG" alt=""></a></div>
             </div>
             <div class="conc">Powered by <a href="http://wedsin.com/">wedsin.com</a> </div>
             <div class="in2">in</div>
         </div>
     </div>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAgXmFRX4X5vu5f6sDX8x3p3CEoo0HWO8o",
+    authDomain: "counter-dc1a2.firebaseapp.com",
+    projectId: "counter-dc1a2",
+    storageBucket: "counter-dc1a2.appspot.com",
+    messagingSenderId: "279830653802",
+    appId: "1:279830653802:web:37abac0cec79ace9e25313",
+    measurementId: "G-VHE6Y55R21"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     <script src="./script.js"></script>
 </body>
 </html>
