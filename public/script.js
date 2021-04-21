@@ -23,7 +23,7 @@ setInterval(function(){
     putVal(count);
 
     // countEle.innerText = JSON.stringify(count)  ;
-}, 1000 *60*5 );
+}, 1000 *5 );
 
 // database.ref("/counter").set({
 //     num:103
